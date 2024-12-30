@@ -7,16 +7,16 @@ body {
     text-align: center;
 }
 
-/* menú */
-header { 
+header {
     background-color: #434a64;
     color: rgb(246, 242, 5);
+    text-decoration-style: double ;
     padding: 20px;
     text-align: center;
     background-image: url('https://i.postimg.cc/XYwzNx1R/obelisco-noche-gente-luces.jpg');
+    
 }
-
-nav {
+nav{
     color: black;
     font-family: 'arial';
     font-weight: bold;
@@ -26,18 +26,12 @@ nav {
     align-items: center;
     padding: 5px;
 }
-
 nav ul {
     list-style: none;
     display: flex;
     padding: 0;
     margin: 0;
-    justify-content: space-around;
-}
-
-/* Estilos para los elementos del menú */
-nav li {
-    position: relative;
+    
 }
 
 nav ul li {
@@ -46,7 +40,7 @@ nav ul li {
     position: relative;
 }
 
-/* Estilos para el submenú */
+
 nav ul li ul {
     color: rgb(240, 240, 10);
     text-decoration: none;
@@ -59,10 +53,11 @@ nav ul li ul {
 }
 
 nav ul li:hover ul {
+    color: rgb(240, 240, 10);
+    text-decoration: overline;
     display: block; /* Muestra el submenú al pasar el mouse */
 }
 
-/* Estilos de los enlaces */
 nav ul li a {
     text-decoration: none;
     color: #a8f3a8;
@@ -72,10 +67,10 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #FFD700; 
+    /*background-color: #000000; */
     border-radius: 5px;
 }
 
-/* Estilo para el ícono de carrito */
 nav a i {
     color: #00FF00; 
     font-size: 1.5em; 
@@ -86,26 +81,16 @@ nav a i:hover {
     color: #FFD700; /* Amarillo */
 }
 
-/* Estilos para pantallas pequeñas */
-@media (max-width: 600px) {
-    /* Estilo para el menú en pantallas pequeñas */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
     nav ul {
-        flex-direction: column; /* Cambiar el menú a columna */
-        align-items: stretch; /* Alineación completa */
-        width: 100%; /* Asegura que ocupe todo el ancho */
-    }
-
-    nav ul li {
-        width: 100%; /* Los elementos del menú ocupan todo el ancho */
-        text-align: left; /* Alineación a la izquierda */
-        margin: 10px 0; /* Espaciado entre los elementos */
-    }
-
-    /* Mostrar submenú en pantallas pequeñas al pasar el ratón */
-    nav ul li:hover ul {
-        position: static; /* El submenú se despliega debajo del elemento */
-        display: block;
-        box-shadow: none; /* Elimina la sombra */
+        text-align: center;
     }
 }
 
@@ -113,8 +98,6 @@ main {
     padding: 20px;
     
 }
-
-
 .h2{
     text-align: center;
     text-size: 2.5em;
@@ -123,7 +106,7 @@ main {
 
 .card-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     /*display:flex;
     flex-wrap: wrap;*/
