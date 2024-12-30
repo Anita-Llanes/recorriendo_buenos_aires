@@ -23,63 +23,135 @@
                         <li><a href="#nocturno">Nocturno</a></li>
                     </ul>
                 </li>
+                <li><a href="#reseñas">Reseñas</a></li>
                 <li><a href="#contacto">Contacto</a></li>
-                <i class="fa-solid fa-cart-shopping"></i>
+                <!--<i class="fa-solid fa-cart-shopping"></i>-->
+                <a href="#carrito">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
             </ul>
         </nav>
     </header>
 
     <main>
+
+        <section id="nosotros" class="sobre-nosotros">
+            <div class="texto">
+                <h2>Sobre Nosotros</h2>
+                <p>Somos un equipo apasionado por compartir la belleza, historia y cultura de Buenos Aires. A través de nuestros recorridos, buscamos ofrecer experiencias inolvidables que conecten a las personas con esta maravillosa ciudad.</p>
+            </div>
+            <div class="imagen">
+                <img src="https://i.postimg.cc/MppL9zrT/cabildo.jpg" alt="Imagen">
+            </div>
+        </section>
+    
+
         <h2>Recorridos</h2>
         <div class="card-container">
-                        <section id="historicos" class="card">
+            <section id="historicos" class="card">
                 <img src="https://i.postimg.cc/MppL9zrT/cabildo.jpg" alt="Históricos">
                 <h3>Históricos</h3>
                 <p>Explora los sitios históricos que narran la rica historia de Buenos Aires.</p>
+                <p>$55000</p>
                 <i class="fas fa-landmark"></i>
-                <i class="fa-solid fa-cart-shopping"></i>
+                <a href="#carrito" class="cart-link" title="Agregar al carrito">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
             </section>
 
             <section id="artistico" class="card">
                 <img src="https://i.postimg.cc/vBDhnvXH/teatro-colon-fachada-noche-gente.jpg" alt="Artístico">
                 <h3>Artístico</h3>
                 <p>Sumérgete en el arte local a través de museos, galerías y exposiciones.</p>
+                <p>$65000</p>
                 <i class="fas fa-paint-brush"></i>
-                <i class="fa-solid fa-cart-shopping"></i>
+                <a href="#carrito" class="cart-link" title="Agregar al carrito">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
             </section>
 
             <section id="iconicos" class="card">
                 <img src="https://i.postimg.cc/KYdscBck/la-boca-esquina-fachada.jpg" alt="Icónicos">
                 <h3>Icónicos</h3>
                 <p>Visita los lugares emblemáticos que definen la ciudad.</p>
+                <p>$75000</p>
                 <i class="fas fa-building"></i>
-                <i class="fa-solid fa-cart-shopping"></i>
+                <a href="#carrito" class="cart-link" title="Agregar al carrito">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
             </section>
 
             <section id="recreativo" class="card">
                 <img src="https://i.postimg.cc/g0sR0PHC/reserva-ecologica.jpg" alt="Recreativo">
                 <h3>Recreativo</h3>
                 <p>Descubre los parques y espacios verdes ideales para disfrutar al aire libre.</p>
+                <p>$80000</p>
                 <i class="fas fa-tree"></i>
-                <i class="fa-solid fa-cart-shopping"></i>
+                <a href="#carrito" class="cart-link" title="Agregar al carrito">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
             </section>
 
             <section id="deportivo" class="card">
                 <img src="https://i.postimg.cc/2ScrjcBH/estadio.jpg" alt="Deportivo">
                 <h3>Deportivo</h3>
                 <p>Conoce los lugares para practicar deportes y actividades físicas en la ciudad.</p>
+                <p>$95000</p>
                 <i class="fas fa-futbol"></i>
-                <i class="fa-solid fa-cart-shopping"></i>
+                <a href="#carrito" class="cart-link" title="Agregar al carrito">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
             </section>
 
             <section id="nocturno" class="card">
                 <img src="https://i.postimg.cc/C5jypJjx/puente-de-la-mujer.jpg" alt="Nocturno">
                 <h3>Nocturno</h3>
                 <p>Descubre la vida nocturna de Buenos Aires, con sus bares, clubes y espectáculos.</p>
+                <p>$95000</p>
                 <i class="fas fa-moon"></i>
-                <i class="fa-solid fa-cart-shopping"></i>
+                <a href="#carrito" class="cart-link" title="Agregar al carrito">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
             </section>
         </div>
+
+        <!-- CARRITO -->
+        <section id="carrito" class="container_cart-area content-wrapper">
+            <h2 class="titulo">Tu carrito</h2>
+            <div class="cart-items">                
+                <ul></ul>
+                <p>Total a pagar $0</p>    
+            </div>            
+            <div>
+                <button id="btn_pagar" type="submit" class="btn-full">Pagar</button>
+                <button id="btn_borrar" type="submit" class="btn-full">Borrar</button>
+            <p id="mensajeCarrito"></p>
+            </div>
+            <div class="payment-icons">
+                <i class="fas fa-credit-card"></i>
+                <i class="fas fa-money-bill-alt"></i>                                
+            </div>
+        </section>
+
+        <!-- RESEÑAS -->
+        <section id="reseñas" class="reseñas">
+            <h2>Reseñas</h2>
+            <div class="reseñas-grid">
+                <div class="card-reseña">
+                    <p>Una experiencia muy agradable con Ana y Pablo... aparte de lo buenos que son explicándonos los lugares bonitos que tiene argentina nos hacían partícipes en su trabajo y así a sido muy amenos casi las 3 horas que compartimos juntos... una experiencia muy buena...</p>
+                    <h3>Nati, España</h3>
+                </div>
+                <div class="card-reseña">
+                    <p>Maravilloso recorrido, realmente se puede apreciar mejor la historia y reconocer lo valioso de este patrimonio histórico que hace de buenos aires un lugar mágico y sorprendente.</p>
+                    <h3>Martha, Colombia</h3>
+                </div>
+                <div class="card-reseña">
+                    <p>Excelente experiencia, estuve con mi esposa y nuestra bebé y disfrutamos mucho del tour y aprendimos bastante. Muy buenas recomendaciones! Gracias Ana!</p>
+                    <h3>Salomón, Colombia</h3>
+                </div>
+            </div>
+        </section>
+
         <section id="contacto" class="container_contact-area padded-form content-wrapper">
             <h2 class="titulo">Contacto</h2>
             <div class="container_contact-box">  
@@ -102,5 +174,6 @@
     <footer>
         <p>&copy; 2024 Recorriendo Buenos Aires by Ana Llanes</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
